@@ -1,5 +1,5 @@
 import React from "react";
-import "/Staff.css";
+import "./Staff.css";
 
 const Card = props => (
   <div className="card text-center">
