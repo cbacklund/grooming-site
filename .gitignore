@@ -20,12 +20,17 @@
 #yarn-debug.log*
 #yarn-error.log*
 
-
+#node_modules
 node_modules
 node_modules/*
 /client/node_modules
 /client/node_modules/*
+
+#lock files
 yarn.lock
 /client/yarn.lock
 package-lock.json
 /client/package-lock.json
+
+#build/release
+build
