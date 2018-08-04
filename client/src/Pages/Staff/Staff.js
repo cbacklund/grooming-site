@@ -1,13 +1,13 @@
 import React from "react";
 import "./Staff.css";
 
-const Card = props => (
-  <div className="card text-center">
-    <div className="card-header">
-      <h2>{props.heading}</h2>
+const Staff = () => {
+  return (
+    <div>
+      <h1>Stylist Profile</h1>
+      <p>STYLIST TEST TEXT</p>
     </div>
-    <div className="card-body">{props.children}</div>
-  </div>
-);
+  )
+}
 
-export default Card;
+export default Staff;
