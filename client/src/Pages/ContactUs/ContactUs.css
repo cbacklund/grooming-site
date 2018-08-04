@@ -1,4 +1,9 @@
 .contact {
-      background-color: red;
+      background-color:#A7D2CB;
       font-size: 100px,
+  }
+
+  body {
+    background-color: #A7D2CB;
+    font-family: 'Open Sans', sans-serif;
   }

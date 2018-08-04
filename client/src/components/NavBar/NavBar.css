@@ -1,0 +1,15 @@
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 43px;
+    color: purple;
+}
+
+
+.navbar-light .navbar-brand {
+    color: rgb(165, 53, 94);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 21px;
+    color: black;
+}

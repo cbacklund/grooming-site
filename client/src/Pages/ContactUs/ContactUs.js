@@ -1,7 +1,7 @@
 import React from "react";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import "./ContactUs.css";
-
+<link  href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"></link>
 
 
 // We use JSX curly braces to evaluate the style object
@@ -15,7 +15,7 @@ const Contact = () => (
 const ContactUs = () => {
     return (
       <div>
-        <h1>Contact Us</h1>
+        <h1 className = "contact" >Contact Us</h1>
         <p>CONTACT US TEST TEXT</p>
       </div>
     )
