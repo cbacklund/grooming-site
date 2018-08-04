@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
-import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Pages/ContactUs";
+import Services from "./Pages/Services";
 import Staff from "./Pages/Staff";
 import Booking from "./Pages/Booking";
 import NavBar from "./components/NavBar";
@@ -19,7 +19,7 @@ class App extends Component {
             <NavBar />
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/about" component={AboutUs} />
+                <Route exact path="/services" component={Services} />
                 <Route exact path="/contact" component={ContactUs} />
                 <Route exact path="/stylist" component={Staff} />
                 <Route exact path="/booking" component={Booking} />
