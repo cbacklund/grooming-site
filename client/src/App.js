@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./components/Pages/Home";
-import AboutUs from "./components/Pages/AboutUs";
-import ContactUs from "./components/Pages/ContactUs";
-import Staff from "./components/Pages/Staff"
+import Home from "./Pages/Home";
+import AboutUs from "./Pages/AboutUs";
+import ContactUs from "./Pages/ContactUs";
+import Staff from "./Pages/Staff"
 import './App.css';
 
 class App extends Component {
