@@ -4,7 +4,7 @@ import "./Staff.css";
 const Staff = () => {
   return (
     <div>
-      <h1>Stylist Profile</h1>
+      <h1 className= "staff">Stylist Profile</h1>
       <p>STYLIST TEST TEXT</p>
     </div>
   )
