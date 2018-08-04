@@ -14,16 +14,16 @@ const NavBar = () => (
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a> 
+                    <a class="nav-link" href="/services">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/stylist">Stylists</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/booking">Book An Appointment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a> 
                 </li>
             </ul>
             <span class="navbar-text">
