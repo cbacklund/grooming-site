@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
+import Booking from "./Pages/Booking";
 import ContactUs from "./Pages/ContactUs";
+import Quote from "./Pages/Quote";
 import Services from "./Pages/Services";
 import Staff from "./Pages/Staff";
-import Booking from "./Pages/Booking";
 import NavBar from "./components/NavBar";
 
 import './App.css';
@@ -19,10 +20,11 @@ class App extends Component {
             <NavBar />
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/services" component={Services} />
-                <Route exact path="/contact" component={ContactUs} />
-                <Route exact path="/stylist" component={Staff} />
                 <Route exact path="/booking" component={Booking} />
+                <Route exact path="/contact" component={ContactUs} />
+                <Route exact path="/quote" component={Quote} />
+                <Route exact path="/services" component={Services} />
+                <Route exact path="/stylist" component={Staff} />
               </Switch>
             </div>
           </div>
