@@ -6,7 +6,7 @@ import "./ContactUs.css";
 
 class ContactUs extends Component {
 
-  componentDidMount(){
+  componentDidMount() {
     document.title = "Bark Avenue | Contact Us"
   }
 
@@ -22,7 +22,9 @@ class ContactUs extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-4 offset-md-4">
+          <Col size="md-4">
+          </Col>
+          <Col size="md-4">
             <h1>
               Contact Us
             </h1>
@@ -38,16 +40,16 @@ class ContactUs extends Component {
               <br />
               14001 Grand Avenue
               <br />
-              Burnsville, MN
-              <br />
-              55337
+              Burnsville, MN 55337
               <br />
               Phone Number:
               <br />
               (952) 435-7798
             </p>
           </Col>
-          <Col size="md-6">
+          <Col size="md-3">
+          </Col>
+          <Col size="md-3">
             <h4>
               Hours of Operation
             </h4>
@@ -63,21 +65,27 @@ class ContactUs extends Component {
           </Col>
         </Row>
         <Row>
-          <Col size="md-6 offset-md-3">
-          <h4>
-            To Receive a Free Quote, Please Click Here
-          </h4>
+          <Col size="md-4">
+          </Col>
+          <Col size="md-5">
+            <h6>
+              To Receive a Free Quote, Please Click Here
+          </h6>
           </Col>
         </Row>
         <Row>
-          <Col size="md-6 offset-md-3">
+          <Col size="md-3">
+          </Col>
+          <Col size="md-6">
             <h4>
               Feel Free To Fill Out Form To Contact Us
             </h4>
           </Col>
         </Row>
         <Row>
-          <Col size="md-6 offset-md-3">
+          <Col size="md-3">
+          </Col>
+          <Col size="md-6">
             <form>
               <Input
                 value={this.state.name}
