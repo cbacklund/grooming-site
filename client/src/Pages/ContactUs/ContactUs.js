@@ -22,60 +22,6 @@ class ContactUs extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-4">
-          </Col>
-          <Col size="md-4">
-            <h1>
-              Contact Us
-            </h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-6">
-            <h4>
-              Address and Phone Number
-              </h4>
-            <p>
-              Address:
-              <br />
-              14001 Grand Avenue
-              <br />
-              Burnsville, MN 55337
-              <br />
-              Phone Number:
-              <br />
-              (952) 435-7798
-            </p>
-          </Col>
-          <Col size="md-3">
-          </Col>
-          <Col size="md-3">
-            <h4>
-              Hours of Operation
-            </h4>
-            <p>
-              Tuesday/Thursday: 8 am-7 pm
-              <br />
-              Wednesday/Friday: 8 am-5 pm
-              <br />
-              Saturday: 8 am-1 pm
-              <br />
-              Closed Sunday/Monday
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-4">
-          </Col>
-          <Col size="md-5">
-            <h6>
-              To Receive a Free Quote, Please Click Here
-          </h6>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-3">
-          </Col>
           <Col size="md-6">
             <h4>
               Feel Free To Fill Out Form To Contact Us
@@ -83,8 +29,6 @@ class ContactUs extends Component {
           </Col>
         </Row>
         <Row>
-          <Col size="md-3">
-          </Col>
           <Col size="md-6">
             <form>
               <Input
@@ -124,6 +68,42 @@ class ContactUs extends Component {
                 Submit Message
               </FormBtn>
             </form>
+          </Col>
+          <Col size="md-1">
+          </Col>
+          <Col size="md-5">
+            <h1>
+              Contact Us
+            </h1>
+            <br />
+            <h4>
+              Address and Phone Number
+              </h4>
+            <p>
+              Address:
+              <br />
+              14001 Grand Avenue
+              <br />
+              Burnsville, MN 55337
+              <br />
+              Phone Number:
+              <br />
+              (952) 435-7798
+            </p>
+            <br />
+            <br />
+            <h4>
+              Hours of Operation
+            </h4>
+            <p>
+              Tuesday/Thursday: 8 am-7 pm
+              <br />
+              Wednesday/Friday: 8 am-5 pm
+              <br />
+              Saturday: 8 am-1 pm
+              <br />
+              Closed Sunday/Monday
+            </p>
           </Col>
         </Row>
       </Container>
