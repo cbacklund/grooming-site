@@ -1,4 +1,5 @@
 module.exports = {
     Dog: require("./dogInfo"),
-    Customer: require("./customerInfo")
+    Customer: require("./customerInfo"),
+    ContactUs: require("./ContactUs")
 };
