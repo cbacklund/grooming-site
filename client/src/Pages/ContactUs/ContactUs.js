@@ -23,9 +23,7 @@ class ContactUs extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-            <h4>
-              Feel Free To Fill Out Form To Contact Us
-            </h4>
+            
           </Col>
         </Row>
         <Row>
@@ -75,26 +73,20 @@ class ContactUs extends Component {
             <h1>
               Contact Us
             </h1>
-            <br />
-            <h4>
-              Address and Phone Number
-              </h4>
-            <p>
-              Address:
+            <h2>
               <br />
               14001 Grand Avenue
               <br />
               Burnsville, MN 55337
               <br />
-              Phone Number:
+              <br />
               <br />
               (952) 435-7798
-            </p>
-            <br />
-            <br />
-            <h4>
+            </h2>   
+            <h1>
               Hours of Operation
-            </h4>
+            </h1>
+            <br />
             <p>
               Tuesday/Thursday: 8 am-7 pm
               <br />
