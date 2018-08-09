@@ -16,12 +16,12 @@ class Home extends Component {
           </Col>
           <Col size="md-8">
             <h1>
-              Welcome to Pet Salon Bark Avenue
+              Welcome to Bark Avenue Pet Salon
             </h1>
           </Col>
         </Row>
         <Row>
-          <Col size="md-6">
+          <Col size="md-5">
             <p>
               Have you been looking for an experienced groomer to groom your dog? At Pet Salon Bark Avenue, we treat your dog like we would our own.
               We are here to provide a gentle and safe grooming experience for your dog. From the super excited puppies coming in for their first grooming experience,
@@ -29,7 +29,7 @@ class Home extends Component {
               We also are knowledgeable in handling dogs with special needs, as well as able to handle many dogs with aggressive tendencies.
             </p>
           </Col>
-          <Col size="md-6">
+          <Col size="md-5">
             <p>
               Our Company believes in continually improving our performance. We attend educational seminars to learn the newest grooming techniques,
               and are a member of the ISCC – International Society of Canine Cosmetologists. We have a solid website of information for our clients,
