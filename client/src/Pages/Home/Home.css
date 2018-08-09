@@ -1,0 +1,22 @@
+h1 {
+color: rgb(165, 53, 94);
+font-family: 'Lobster', cursive;
+text-align: left;
+
+}
+ body {
+    background-image: url("http://scottlakevet.com/wp-content/uploads/2016/03/dog-cutout.png"); 
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right; 
+    background-size: 400px;
+    
+
+   
+ }
+
+p  {
+    float: left;
+ }
+ 
