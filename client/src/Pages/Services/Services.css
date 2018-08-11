@@ -1,1 +1,17 @@
+div {
+    height: 200px;
+}
 
+.ReactFlipCard__Front {
+    width: 350px;
+    height: 175px;
+    background-color: snow;
+    text-align: center;
+}
+
+.ReactFlipCard__Back {
+    width: 350px;
+    height: 175px;
+    background-color: snow;
+    text-align: center;
+}
