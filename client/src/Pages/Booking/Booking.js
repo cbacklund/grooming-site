@@ -3,64 +3,57 @@ import { Col, Row, Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
 import "./Booking.css";
 
-
 class Booking extends Component {
+
+  componentDidMount() {
+    document.title = "Bark Avenue | Booking"
+  }
 
   state = {
     name: "",
     dogName: "",
     services: ""
   }
-    // handle any changes to the input fields
+
   handleInputChange = event => {
-    // Pull the name and value properties off of the event.target (the element which triggered the event)
-    const { name, dogName, services, value } = event.target;
-
-    // Set the state for the appropriate input field
+    const { name, value } = event.target;
     this.setState({
-      [name]: value,
-      [dogName]: value,
-      [services]: value
+      [name]: value
     });
-  };
-
-  // When the form is submitted, prevent the default event and alert the username and password
-  handleFormSubmit = event => {
-    event.preventDefault();
-    this.setState({ name: "", dogName: "", services: "" });
   };
 
   render() {
     return (
       <Container fluid>
         <Row>
+          <Col size="md-3">
+          </Col>
           <Col size="md-6">
-            
+            <h1>
+              Book An Appointment
+            </h1>
           </Col>
         </Row>
         <Row>
           <Col size="md-6">
             <form>
               <Input
-                type="text"
                 value={this.state.name}
                 onChange={this.handleInputChange}
-                name="Name"
+                name="name"
                 placeholder="Name (Required)"
               />
               <Input
-                type="text"
                 value={this.state.dogName}
                 onChange={this.handleInputChange}
-                name="Dog Name"
+                name="dogName"
                 placeholder="Dog Name (Required)"
               />
               <Input
-                type="text"
                 value={this.state.services}
                 onChange={this.handleInputChange}
-                name="Services"
-                placeholder="Services"
+                name="services"
+                placeholder="Services (Required)"
               />
               <FormBtn
                 disabled={!(this.state.name && this.state.dogName && this.state.services)}
@@ -70,7 +63,7 @@ class Booking extends Component {
               </FormBtn>
             </form>
           </Col>
-          <Col size="md-1">
+          {/* <Col size="md-1">
           </Col>
           <Col size="md-5">
             <h1>
@@ -99,7 +92,7 @@ class Booking extends Component {
               <br />
               Closed Sunday/Monday
             </p>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     )
