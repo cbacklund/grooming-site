@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import LocationImg from "../../components/img/location.png";
+import PhoneImg from "../../components/img/phone.png";
 import "./ContactUs.css";
 
 
@@ -23,7 +25,6 @@ class ContactUs extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-            
           </Col>
         </Row>
         <Row>
@@ -74,19 +75,19 @@ class ContactUs extends Component {
               Contact Us
             </h1>
             <h2>
+              <img src={ LocationImg } alt="Location"/>
               <br />
               14001 Grand Avenue
               <br />
               Burnsville, MN 55337
               <br />
-              <br />
+              <img src={ PhoneImg } alt="Phone"/>
               <br />
               (952) 435-7798
             </h2>   
             <h1>
               Hours of Operation
             </h1>
-            <br />
             <p>
               Tuesday/Thursday: 8 am-7 pm
               <br />
