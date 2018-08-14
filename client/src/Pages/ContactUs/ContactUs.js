@@ -5,7 +5,6 @@ import LocationImg from "../../components/img/location.png";
 import PhoneImg from "../../components/img/phone.png";
 import "./ContactUs.css";
 
-
 class ContactUs extends Component {
 
   componentDidMount() {
@@ -19,6 +18,13 @@ class ContactUs extends Component {
     breed: "",
     message: ""
   }
+
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
 
   render() {
     return (
