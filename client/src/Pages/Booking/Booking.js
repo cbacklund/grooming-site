@@ -12,7 +12,8 @@ class Booking extends Component {
   state = {
     name: "",
     dogName: "",
-    services: ""
+    services: "",
+    phoneNumber: ""
   }
 
   handleInputChange = event => {
@@ -44,6 +45,12 @@ class Booking extends Component {
                 placeholder="Name (Required)"
               />
               <Input
+                value={this.state.phoneNumber}
+                onChange={this.handleInputChange}
+                name="phoneNumber"
+                placeholder="Phone Number (Required)"
+              />
+              <Input
                 value={this.state.dogName}
                 onChange={this.handleInputChange}
                 name="dogName"
@@ -56,7 +63,7 @@ class Booking extends Component {
                 placeholder="Services (Required)"
               />
               <FormBtn
-                disabled={!(this.state.name && this.state.dogName && this.state.services)}
+                disabled={!(this.state.name && this.state.phoneNumber && this.state.dogName && this.state.services)}
                 onClick={this.handleFormSubmit}
               >
                 Submit
