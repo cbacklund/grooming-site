@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { Card, ImageHeader, CardBody } from "react-simple-card";
-import Modal from 'react-responsive-modal';
+import Modal from "react-responsive-modal";
 import Afton from "../../components/img/afton-profile-pic.png";
 import Marcy from "../../components/img/marcy-profile-pic.png";
 import Jenny from "../../components/img/jenny-profile-pic.png";
