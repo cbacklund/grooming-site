@@ -1,25 +1,39 @@
 .card__body {
-    text-align: center;
+  text-align: center;
 }
 
+/*react-responsive-modal*/
 .transition-enter {
-    transform: scale(0);
-  }
-  .transition-enter-active {
-    transform: scale(1);
-    transition: transform 1000ms ease;
-  }
-  .transition-exit {
-    transform: scale(1);
-  }
-  .transition-exit-active {
-    transform: scale(0);
-    transition: transform 1000ms ease;
-  }
+  transform: scale(0);
+}
+.transition-enter-active {
+  transform: scale(1);
+  transition: transform 1000ms ease;
+}
+.transition-exit {
+  transform: scale(1);
+}
+.transition-exit-active {
+  transform: scale(0);
+  transition: transform 1000ms ease;
+}
 
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h6 {
+  text-align: center;
+}
+
+.modalBioh4 {
+ text-align: center;
+}
+
+.modalBiop {
+  text-align: center;
+  font-size: 15px;
 }

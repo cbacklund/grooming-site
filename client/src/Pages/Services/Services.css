@@ -1,4 +1,4 @@
-.ReactFlipCard__Front {
+/* .ReactFlipCard__Front {
     width: 350px;
     height: 175px;
     background-color: snow;
@@ -8,6 +8,15 @@
 .ReactFlipCard__Back {
     width: 350px;
     height: 175px;
+    background-color: snow;
+    text-align: center;
+}
+*/
+
+.ReactFlipCard, .ReactFlipCard__Front, .ReactFlipCard__Back {
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
     background-color: snow;
     text-align: center;
 }

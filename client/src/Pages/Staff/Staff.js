@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { Card, ImageHeader, CardBody } from "react-simple-card";
-import Modal from 'react-responsive-modal';
+import Modal from "react-responsive-modal";
 import Afton from "../../components/img/afton-profile-pic.png";
 import Marcy from "../../components/img/marcy-profile-pic.png";
 import Jenny from "../../components/img/jenny-profile-pic.png";
@@ -9,6 +9,10 @@ import Norma from "../../components/img/norma-profile-pic.png";
 import "./Staff.css";
 
 class Staff extends Component {
+
+  componentDidMount() {
+    document.title = "Bark Avenue | Stylists"
+  };
 
   state = {
     open1: false,
@@ -49,12 +53,6 @@ class Staff extends Component {
     this.setState({ open4: false });
   };
 
-
-  componentDidMount() {
-    document.title = "Bark Avenue | Stylists"
-  };
-
-
   render() {
     const { open1, open2, open3, open4 } = this.state;
     return (
@@ -78,7 +76,7 @@ class Staff extends Component {
           </Col>
           <Col size="md-4">
             <Card>
-              <ImageHeader imageSrc={Afton} alt="Afton" />
+              <ImageHeader imageSrc={Afton} alt="Afton"/>
               <CardBody>
                 <button className="btn btn-light" onClick={this.onOpenModal1}>
                   Afton
@@ -96,11 +94,11 @@ class Staff extends Component {
                   animationDuration={1000}
                 >
                   <img src={Afton} alt="Afton" class="center" />
-                  <h4>
+                  <h4 class="modalBioh4">
                     Afton - Owner/Master Pet Stylist
                   </h4>
-                  <p>
-                    Specialties:
+                  <p class="modalBiop">
+                    <strong>Specialties:</strong>
                   <br />
                     Schnauzers, Puppies, Hand Scissor Trims, Rare Breeds, Large Double-Coated Breeds
                   </p>
@@ -130,11 +128,11 @@ class Staff extends Component {
                   animationDuration={1000}
                 >
                   <img src={Marcy} alt="Marcy" class="center" />
-                  <h4>
+                  <h4 class="modalBioh4">
                     Marcy - Stylist
                   </h4>
-                  <p>
-                    Specialties:
+                  <p class="modalBiop">
+                    <strong>Specialties:</strong>
                   <br />
                     Golden Retrievers, Doodles, Fearful Pets, Puppy Mill Rescues, Express Grooms, King Charles Cavalier Spaniels
                   </p>
@@ -166,11 +164,11 @@ class Staff extends Component {
                   animationDuration={1000}
                 >
                   <img src={Jenny} alt="Jenny" class="center" />
-                  <h4>
+                  <h4 class="modalBioh4">
                     Jenny - Stylist
                   </h4>
-                  <p>
-                    Specialties:
+                  <p class="modalBiop">
+                    <strong>Specialties:</strong>
                   <br />
                     Shih Tzus, Westies, Anxious Dogs, RAGOM Foster Dogs, Special Needs Dogs
                   </p>
@@ -200,13 +198,13 @@ class Staff extends Component {
                   animationDuration={1000}
                 >
                   <img src={Norma} alt="Norma" class="center" />
-                  <h4>
+                  <h4 class="modalBioh4">
                     Norma - Shop Dog
                   </h4>
-                  <p>
-                    Specialties:
+                  <p class="modalBiop">
+                    <strong>Specialties:</strong>
                   <br />
-                    Begging for treats, Greeting customers, Napping, Hopefully more Treats
+                    Begging for treats, Greeting customers, Napping, Hopefully more treats
                   </p>
                 </Modal>
               </CardBody>

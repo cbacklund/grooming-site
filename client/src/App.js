@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
 import Booking from "./Pages/Booking";
 import ContactUs from "./Pages/ContactUs";
-import Quote from "./Pages/Quote";
+import NoRoute from "./Pages/NoRoute";
 import Services from "./Pages/Services";
 import Staff from "./Pages/Staff";
 import NavBar from "./components/NavBar";
@@ -22,9 +22,9 @@ class App extends Component {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/booking" component={Booking} />
                 <Route exact path="/contact" component={ContactUs} />
-                <Route exact path="/quote" component={Quote} />
                 <Route exact path="/services" component={Services} />
                 <Route exact path="/stylist" component={Staff} />
+                <Route component={NoRoute} />
               </Switch>
             </div>
           </div>

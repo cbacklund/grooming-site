@@ -20,9 +20,6 @@ const NavBar = () => (
                     <a class="nav-link" href="/stylist">Stylists</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/quote">Quote</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/booking">Book An Appointment</a>
                 </li>
                 <li class="nav-item">
