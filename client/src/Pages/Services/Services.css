@@ -17,6 +17,9 @@
     box-sizing: border-box;
     width: 100%;
     height: 150px;
-    background-color: snow;
     text-align: center;
+}
+
+.ReactFlipCard__Front, .ReactFlipCard__Back {
+    background-color: snow;
 }

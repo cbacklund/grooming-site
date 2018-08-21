@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import API from "../utils/API";
 import LocationImg from "../../components/img/location.png";
 import PhoneImg from "../../components/img/phone.png";
 import "./ContactUs.css";
@@ -24,6 +25,18 @@ class ContactUs extends Component {
     this.setState({
       [name]: value
     });
+  };
+
+  handleFormSubmit = event => {
+    if (this.state.name && this.state.phoneNumber && this.state.breed) {
+      API.saveContact({
+        name: this.state.name,
+        phoneNumber: this.state.phoneNumber,
+        email: this.state.email,
+        breed: this.state.breed,
+        message: this.state.message
+      })
+    }
   };
 
   render() {
