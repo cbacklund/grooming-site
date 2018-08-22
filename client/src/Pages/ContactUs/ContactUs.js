@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import API from "../../utils/API";
 import LocationImg from "../../components/img/location.png";
 import PhoneImg from "../../components/img/phone.png";
 import "./ContactUs.css";
@@ -24,6 +25,23 @@ class ContactUs extends Component {
     this.setState({
       [name]: value
     });
+  };
+
+  handleFormSubmit = event => {
+    //event.preventDefault();
+    if (this.state.name && this.state.phoneNumber && this.state.breed) {
+      API.saveContact({
+        name: this.state.name,
+        phoneNumber: this.state.phoneNumber,
+        email: this.state.email,
+        breed: this.state.breed,
+        message: this.state.message
+      })
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => console.log(err));
+    }
   };
 
   render() {
@@ -81,16 +99,16 @@ class ContactUs extends Component {
               Contact Us
             </h1>
             <h2>
-              <img src={ LocationImg } alt="Location"/>
+              <img src={LocationImg} alt="Location" />
               <br />
               14001 Grand Avenue
               <br />
               Burnsville, MN 55337
               <br />
-              <img src={ PhoneImg } alt="Phone"/>
+              <img src={PhoneImg} alt="Phone" />
               <br />
               (952) 435-7798
-            </h2>   
+            </h2>
             <h1>
               Hours of Operation
             </h1>
