@@ -5,12 +5,13 @@ import Jumbotron from "../../components/Jumbotron";
 import { List, ListItem } from "../../components/List";
 import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/API";
-import "./Auth.css";
+import "./Employee.css";
 
 class Booking extends Component {
 
     componentDidMount() {
         document.title = "Bark Avenue | Employee"
+        this.loadContacts();
     }
 
     state = {
@@ -24,21 +25,21 @@ class Booking extends Component {
             )
             .catch(err => console.log(err));
     };
-    
-      deleteContact = id => {
-        API.deleteContact(id)
-          .then(res => this.loadContacts())
-          .catch(err => console.log(err));
-      };
 
-      handleFormSubmit = event => {
-          event.preventDefault();
-          API.getContact()
-              .then(res =>
-                  this.setState({ contacts: res.data, name: "", phoneNumber: "", email: "", breed: "", message: "" })
-              )
-              .catch(err => console.log(err));
-      };
+    deleteContact = id => {
+        API.deleteContact(id)
+            .then(res => this.loadContacts())
+            .catch(err => console.log(err));
+    };
+
+    handleFormSubmit = event => {
+        event.preventDefault();
+        API.getContact()
+            .then(res =>
+                this.setState({ contacts: res.data, name: "", phoneNumber: "", email: "", breed: "", message: "" })
+            )
+            .catch(err => console.log(err));
+    };
 
     render() {
         return (
@@ -72,7 +73,7 @@ class Booking extends Component {
                                             <strong>Name:</strong> {found.name}
                                             <br />
                                             <strong>Phone Number:</strong> {found.phoneNumber}
-                                            <br />                                        
+                                            <br />
                                             <strong>Email Address:</strong> {found.email}
                                             <br />
                                             <strong>Type of Dog</strong>: {found.breed}
@@ -83,7 +84,7 @@ class Booking extends Component {
                                     ))}
                                 </List>
                             ) : (
-                                    <h3>No Results to Display</h3>
+                                    <h3>Inbox Is Empty. Click Button To Refresh</h3>
                                 )}
                         </Jumbotron>
                     </Col>
