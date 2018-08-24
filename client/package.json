@@ -5,6 +5,7 @@
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "axios": "^0.18.0",
+    "nuka-carousel": "^4.3.6",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-flipcard-2": "^0.3.2",
