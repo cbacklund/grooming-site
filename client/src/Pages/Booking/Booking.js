@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
+import API from "../../utils/API";
 import "./Booking.css";
 
 class Booking extends Component {
@@ -11,9 +12,9 @@ class Booking extends Component {
 
   state = {
     name: "",
+    phoneNumber: "",
     dogName: "",
-    services: "",
-    phoneNumber: ""
+    service: ""
   }
 
   handleInputChange = event => {
@@ -21,6 +22,22 @@ class Booking extends Component {
     this.setState({
       [name]: value
     });
+  };
+
+  handleFormSubmit = event => {
+    //event.preventDefault();
+    if (this.state.name && this.state.phoneNumber && this.state.dogName && this.state.service) {
+      API.saveBooking({
+        name: this.state.name,
+        phoneNumber: this.state.phoneNumber,
+        dogName: this.state.dogName,
+        service: this.state.service
+      })
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => console.log(err));
+    }
   };
 
   render() {
@@ -57,49 +74,19 @@ class Booking extends Component {
                 placeholder="Dog Name (Required)"
               />
               <Input
-                value={this.state.services}
+                value={this.state.service}
                 onChange={this.handleInputChange}
-                name="services"
-                placeholder="Services (Required)"
+                name="service"
+                placeholder="Service (Required)"
               />
               <FormBtn
-                disabled={!(this.state.name && this.state.phoneNumber && this.state.dogName && this.state.services)}
+                disabled={!(this.state.name && this.state.phoneNumber && this.state.dogName && this.state.service)}
                 onClick={this.handleFormSubmit}
               >
                 Submit
               </FormBtn>
             </form>
           </Col>
-          {/* <Col size="md-1">
-          </Col>
-          <Col size="md-5">
-            <h1>
-              Contact Us
-            </h1>
-            <h2>
-              <br />
-              14001 Grand Avenue
-              <br />
-              Burnsville, MN 55337
-              <br />
-              <br />
-              <br />
-              (952) 435-7798
-            </h2>   
-            <h1>
-              Hours of Operation
-            </h1>
-            <br />
-            <p>
-              Tuesday/Thursday: 8 am-7 pm
-              <br />
-              Wednesday/Friday: 8 am-5 pm
-              <br />
-              Saturday: 8 am-1 pm
-              <br />
-              Closed Sunday/Monday
-            </p>
-          </Col> */}
         </Row>
       </Container>
     )
