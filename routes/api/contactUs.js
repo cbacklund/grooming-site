@@ -5,4 +5,7 @@ router.route("/")
   .get(contactusController.findAll)
   .post(contactusController.create);
 
+router.route("/:id")
+  .delete(contactusController.remove);
+
 module.exports = router;

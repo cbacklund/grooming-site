@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
+import Auth from "./Pages/Auth";
 import Booking from "./Pages/Booking";
 import ContactUs from "./Pages/ContactUs";
 import NoRoute from "./Pages/NoRoute";
@@ -24,6 +25,7 @@ class App extends Component {
                 <Route exact path="/contact" component={ContactUs} />
                 <Route exact path="/services" component={Services} />
                 <Route exact path="/stylist" component={Staff} />
+                <Route exact path="/auth" component={Auth} />
                 <Route component={NoRoute} />
               </Switch>
             </div>
