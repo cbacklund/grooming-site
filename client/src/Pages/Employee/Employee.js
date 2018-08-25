@@ -7,7 +7,7 @@ import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/API";
 import "./Employee.css";
 
-class Booking extends Component {
+class Employee extends Component {
 
     componentDidMount() {
         document.title = "Bark Avenue | Employee"
@@ -93,4 +93,4 @@ class Booking extends Component {
         )
     }
 }
-export default Booking;
+export default Employee;
